@@ -1,6 +1,4 @@
-# Python Project Template for your projects
-
-Use as a template for python repos, just basics to support python development and testing.
+# Python leet codes and other practice problems
 
 
 ## Run the tests
@@ -14,5 +12,5 @@ The `launch.json` file includes the necessary config to support using the vscode
 
 # Docker Container
 
-Here is the [Dockerfile](https://github.com/phoughton/python_dev_container) for this template repo.
-(Its in a seperate Repo)
+This project includes a Dockerfile that can be used to build a container that can be used to run the tests.
+Though this is all handled by the .devcontainer configuration if you are using vscode.
