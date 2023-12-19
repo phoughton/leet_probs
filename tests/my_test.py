@@ -1,13 +1,11 @@
 import pytest
-from myproj import myclass
+from myproj import solution
 
 
-@pytest.mark.parametrize("a_var", [
-        (1),
-        (2),
-        (3)
+@pytest.mark.parametrize("nums, answer", [
+        ([0, 1, 2, 4, 5, 7], ["0->2", "4->5", "7"]),
+        ([0, 2, 3, 4, 6, 8, 9], ["0", "2->4", "6", "8->9"]),
     ])
-def test_myclass(a_var):
-    my_obj = myclass.MyClass(a_var)
-    assert my_obj.get_my_var() == a_var
-    assert my_obj.myvar == a_var
+def test_myclass(nums, answer):
+    my_obj = solution.Solution()
+    assert my_obj.summaryRanges(nums) == answer
