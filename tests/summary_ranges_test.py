@@ -1,5 +1,5 @@
 import pytest
-from myproj import solution
+from myproj import summary_ranges_solution
 
 
 @pytest.mark.parametrize("nums, answer", [
@@ -7,5 +7,5 @@ from myproj import solution
         ([0, 2, 3, 4, 6, 8, 9], ["0", "2->4", "6", "8->9"]),
     ])
 def test_myclass(nums, answer):
-    my_obj = solution.Solution()
-    assert my_obj.summaryRanges(nums) == answer
+    solutionizer = summary_ranges_solution.SummaryRangesSolution()
+    assert solutionizer.summaryRanges(nums) == answer

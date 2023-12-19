@@ -1,4 +1,4 @@
-class Solution:
+class SummaryRangesSolution:
     def summaryRanges(self, nums: list[int]) -> list[str]:
         """
         :type nums: List[int]
