@@ -7,7 +7,7 @@ class SummaryRangesSolution:
         response = []
         curr_range = []
 
-        # Add dummy entry, lower than all others, 
+        # Add dummy entry, lower than all others,
         # that allows final ranges to work.
         nums.append(nums[0]-1)
 
